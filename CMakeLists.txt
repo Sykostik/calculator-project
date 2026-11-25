@@ -1,0 +1,22 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "drivers/lcd.c"
+        "drivers/keypad.c"
+        "drivers/camera.c"
+        "network/wifi_manager.c"
+        "ai/chat_history.c"
+        "ai/gemini_client.c"
+        "math/math_parser.c"
+        "ui/calc_ui.c"
+        "ui/graph_ui.c"
+        "ui/ai_overlay.c"
+    INCLUDE_DIRS
+        "."
+        "config"
+        "drivers"
+        "network"
+        "ai"
+        "math"
+        "ui"
+)
